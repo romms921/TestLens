@@ -1,0 +1,48 @@
+
+# primary parameters
+omega     0.300000
+lambda    0.700000
+weos      -1.000000
+hubble    0.700000
+prefix    /Users/ainsleylewis/Documents/Astronomy/TestLens/out/SIE_POS
+xmin	  -3.5
+ymin	  -3.5
+xmax	  3.5
+ymax	  3.5
+pix_ext   0.01
+pix_poi   0.01
+maxlev	  1
+
+# secondary parameters
+chi2_splane    0
+chi2_checknimg 0
+chi2_restart   -1
+chi2_usemag    0
+hvary          0
+ran_seed       -122000
+
+startup 1 0 1
+
+# this is the `solution'
+lens sie  0.2300 2.368933e+02 -0.832 1.220 3.203552e-01 0 0.000000e+00 0.0
+point 0.777 0.0 0.0
+end_startup
+
+# optimizations
+start_setopt
+0 1 1 1 1 1 0 0 
+0 1 1
+end_setopt
+
+# execute commands
+start_command
+
+readobs_point /Users/ainsleylewis/Documents/Astronomy/TestLens/obs/obs_point_SIE(POS).dat
+
+optimize
+findimg
+writecrit 0.777
+writelens 0.777
+
+quit
+
