@@ -27,11 +27,11 @@ obs_readnoise  10.0
 flag_srcsbin   1
 
 ## define lenses and sources
-startup 1 1 0
-lens pow  0.3 0.4 0.0 0.0 0.5 45.0 8.0 2.6
-#lens mpole 0.3 0.4 0.0 0.0 0.01 180.0 3 2.6
-#lens mpole 0.3 0.4 0.0 0.0 0.01 180.0 4 2.6
-extend sersic 0.5 5e10 0.0 0.0 0.6 0.0 8.0 4.0
+startup 3 1 0
+lens pow  0.3 0.4 0.0 0.0 0.5 45.0 8.0 2.2
+lens mpole 0.3 0.4 0.0 0.0 0.01 0 3 2.2
+lens mpole 0.3 0.4 0.0 0.0 0.01 0.0 4 2.2
+extend sersic 0.5 5e10 0.0 0.0 0.9 0.0 10.0 4.0
 psf 0.8 0.02 -45.0 5.0 0.8 0.0 0.0 5.0 1.0
 end_startup
 
