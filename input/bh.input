@@ -25,7 +25,7 @@ flag_srcsbin   1
 ## define lenses and sources
 startup 1 1 0
 lens point 0.3 1e11 0.0 0.0 0.0 0.0 0.0 0.0
-extend sersic 0.5555555555555556 5e10 0.0 0.0 0.0 0.0 0.1 1.0
+extend sersic 1.5 5e10 0.0 0.0 0.0 0.0 0.1 1.0
 psf 0.8 0.02 -45.0 5.0 0.8 0.0 0.0 5.0 1.0
 end_startup
 
